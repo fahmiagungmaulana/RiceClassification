@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing import image
 from keras.utils import load_img, img_to_array
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input as mobile
 
-model = tf.keras.models.load_model("D:\Lab aicenter\oprec23\mobilenet.keras")
+model = tf.keras.models.load_model("mobilenet.keras")
 
 uploaded_file = st.file_uploader("Choose a image file", type = ['png', 'jpg', 'jpeg'])
 
