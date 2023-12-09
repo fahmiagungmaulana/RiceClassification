@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
-from keras.utils import load_img, img_to_array
+from tensorflow.keras.utils import load_img, img_to_array
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input as mobile
 
 model = tf.keras.models.load_model("mobilenet.keras")
