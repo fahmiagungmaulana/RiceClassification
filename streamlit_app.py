@@ -16,6 +16,7 @@ st.markdown(
     .title-text {
         margin-top: 20px;
         margin-left: 10px;
+        text-align: left;
     }
     .title-img {
         width: 100px;
@@ -34,7 +35,7 @@ with col1:
     st.image('COVER.png', width=700)
 
 with col2:
-    st.markdown(f"<p style='text-align: left;'>Beras Tersebut adalah beras jenis {map_dict[np.argmax(prediction)]}</p>", unsafe_allow_html=True)
+    st.markdown("<h1 class='title-text'>Rice Classification</h1>", unsafe_allow_html=True)
 
 st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
 
