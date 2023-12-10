@@ -21,7 +21,7 @@ st.markdown(
     .group-identifier {
         font-size: small;
         font-style: italic;
-        margin-top: -10px;
+        margin-top: -20px;
     }
     </style>
     """,
