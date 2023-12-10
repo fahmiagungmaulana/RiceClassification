@@ -33,8 +33,14 @@ with col2:
 
 st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
 
-model = tf.keras.models.load_model('mobilenet.h5')
+model_selection = st.radio("Select Model", ('CNN', 'MobileNet'))
 
+if model_selection == 'CNN':
+    model_path = 'rice_model.keras'
+elif model_selection == 'MobileNet':
+    model_path = 'mobilenet.h5'
+
+model = tf.keras.models.load_model(model_path)
 uploaded_file = st.file_uploader("Choose an image file", type=['png', 'jpg', 'jpeg'])
 
 map_dict = {
