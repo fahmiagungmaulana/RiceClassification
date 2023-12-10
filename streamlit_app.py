@@ -57,6 +57,6 @@ if uploaded_file is not None:
         img = load_img(uploaded_file)
         input_arr = img_to_array(img)
         prediction = model(np.array([input_arr]))
-        st.write("Beras Tersebut adalah beras jenis:")
+        st.write("This type of rice is:")
         st.write(map_dict[np.argmax(prediction)])
 
