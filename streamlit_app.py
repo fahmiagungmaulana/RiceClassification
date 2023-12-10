@@ -62,4 +62,6 @@ if uploaded_file is not None:
         img = load_img(uploaded_file)
         input_arr = img_to_array(img)
         prediction = model(np.array([input_arr]))
-        st.markdown(f"<p style='text-align: left;'>Beras Tersebut adalah beras jenis {map_dict[np.argmax(prediction)]}</p>", unsafe_allow_html=True)
+        st.write("Beras Tersebut adalah beras jenis:")
+        st.write(map_dict[np.argmax(prediction)])
+
