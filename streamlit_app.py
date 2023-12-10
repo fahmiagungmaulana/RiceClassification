@@ -15,7 +15,7 @@ st.markdown(
     }
     .title-text {
         margin-top: 20px;
-        margin-left: -100px;
+        margin-left: -120px;
         text-align: left;
     }
     </style>
