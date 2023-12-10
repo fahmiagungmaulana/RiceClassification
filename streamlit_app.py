@@ -38,6 +38,7 @@ with col2:
     st.markdown("<div class='group-identifier'>by Group 2 AILO</div>", unsafe_allow_html=True)
 
 st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
+st.write("")
 
 st.markdown("**PREDICT YOUR RICE TYPE**", unsafe_allow_html=True)
 model_selection = st.radio("Select Model", ('CNN', 'MobileNet'))
