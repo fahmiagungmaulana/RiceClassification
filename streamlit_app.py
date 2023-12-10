@@ -18,7 +18,7 @@ st.markdown(
         margin-left: 10px;
     }
     .title-img {
-        width: 1600px;
+        width: 100px;
         height: auto;
     }
     </style>
@@ -40,7 +40,7 @@ st.write("This classifier categorizes images of rice into five different types: 
 
 model = tf.keras.models.load_model('mobilenet.h5')
 
-uploaded_file = st.file_uploader("Choose a image file", type = ['png', 'jpg', 'jpeg'])
+uploaded_file = st.file_uploader("Choose an image file", type=['png', 'jpg', 'jpeg'])
 
 map_dict = {
     0: 'Arborio',
@@ -57,9 +57,9 @@ if uploaded_file is not None:
 
     st.image(opencv_image, channels="RGB")
 
-    Genrate_pred = st.button("Generate Prediction")
-    if Genrate_pred:
+    Generate_pred = st.button("Generate Prediction")
+    if Generate_pred:
         img = load_img(uploaded_file)
         input_arr = img_to_array(img)
         prediction = model(np.array([input_arr]))
-        st.title("Beras Tersebut adalah beras jenis {}".format(map_dict[np.argmax(prediction)]))
+        st.markdown(f"<p style='text-align: left;'>Beras Tersebut adalah beras jenis {map_dict[np.argmax(prediction)]}</p>", unsafe_allow_html=True)
