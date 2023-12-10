@@ -11,7 +11,7 @@ st.markdown(
     <style>
     .title-container {
         display: flex;
-        align-items: right;
+        align-items: left;
     }
     .title-text {
         margin-top: 20px;
