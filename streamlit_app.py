@@ -16,11 +16,14 @@ st.markdown(
     .title-text {
         margin-top: 20px;
         margin-left: 10px;
-        text-align: left;
+    }
+    .title-img {
+        width: 100px;
+        height: auto;
     }
     </style>
     """,
-    unsafe_allow_html=True
+    allow_html=True
 )
 
 st.title(" ")
@@ -31,12 +34,7 @@ with col1:
     st.image('COVER.png', width=700)
 
 with col2:
-    st.markdown("""
-    <div class="title-container">
-        <img src='nama_file_gambar.jpg' class='title-img'>
-        <h1 class="title-text">Rice Classification</h1>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("<h1 class='title-text'>Rice Classification</h1>", unsafe_allow_html=True)
 
 st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
 
