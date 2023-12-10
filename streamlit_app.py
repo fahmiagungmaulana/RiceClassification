@@ -36,7 +36,7 @@ st.write("This classifier categorizes images of rice into five different types: 
 model_selection = st.radio("Select Model", ('CNN', 'MobileNet'))
 
 if model_selection == 'CNN':
-    model_path = 'rice_model.keras'
+    model_path = 'rice_model.h5'
 elif model_selection == 'MobileNet':
     model_path = 'mobilenet.h5'
 
