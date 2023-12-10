@@ -31,7 +31,7 @@ st.title(" ")
 col1, col2 = st.columns([1, 4])
 
 with col1:
-    st.image("COVER.png")
+    st.markdown("<img src='COVER.png' class='title-img'>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<h1 class='title-text'>Rice Classification</h1>", unsafe_allow_html=True)
