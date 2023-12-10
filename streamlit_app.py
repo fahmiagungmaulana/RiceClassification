@@ -9,10 +9,6 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_i
 st.markdown(
     """
     <style>
-    .title-container {
-        display: flex;
-        align-items: center;
-    }
     .title-text {
         margin-top: 20px;
         margin-left: 10px;
