@@ -18,7 +18,7 @@ st.markdown(
         margin-left: 10px;
     }
     .title-img {
-        width: 100px;
+        width: 1600px;
         height: auto;
     }
     </style>
