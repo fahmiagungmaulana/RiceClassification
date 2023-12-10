@@ -15,16 +15,12 @@ st.markdown(
     }
     .title-text {
         margin-top: 20px;
-        margin-left: 10px;
+        margin-right: 10px;
         text-align: left;
-        
     }
     .title-img {
         width: 700px;
         height: auto;
-    }
-    .left-text {
-        text-align: left;
     }
     </style>
     """,
