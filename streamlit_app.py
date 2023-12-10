@@ -11,11 +11,11 @@ st.markdown(
     <style>
     .title-container {
         display: flex;
-        align-items: center;
+        align-items: left;
     }
     .title-text {
         margin-top: 20px;
-        margin-left: 1px;
+        margin-left: 10px;
     }
     .title-img {
         width: 100px;
