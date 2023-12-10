@@ -14,13 +14,14 @@ st.markdown(
         align-items: left;
     }
     .title-text {
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: -120px;
         text-align: left;
     }
     .group-identifier {
         font-size: small;
         font-style: italic;
+        margin-top: -10px;
     }
     </style>
     """,
