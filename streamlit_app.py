@@ -18,6 +18,11 @@ st.markdown(
         margin-left: -120px;
         text-align: left;
     }
+    .group-identifier {
+        font-size: small;
+        font-style: italic;
+        color: gray;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -30,9 +35,11 @@ with col1:
 
 with col2:
     st.markdown("<h1 class='title-text'>Rice Classification</h1>", unsafe_allow_html=True)
+    st.markdown("<div class='group-identifier'>by Group 2 AILO</div>", unsafe_allow_html=True)
 
 st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
 
+st.markdown("**Predict your rice type**", unsafe_allow_html=True)
 model_selection = st.radio("Select Model", ('CNN', 'MobileNet'))
 
 if model_selection == 'CNN':
