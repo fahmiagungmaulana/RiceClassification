@@ -18,10 +18,6 @@ st.markdown(
         margin-left: 10px;
         text-align: left;
     }
-    .title-img {
-        width: 1600px;
-        height: auto;
-    }
     </style>
     """,
     unsafe_allow_html=True
