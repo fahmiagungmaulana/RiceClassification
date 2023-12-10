@@ -19,7 +19,7 @@ st.markdown(
         text-align: left;
     }
     .title-img {
-        width: 700px;
+        width: 10px;
         height: auto;
     }
     </style>
