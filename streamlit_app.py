@@ -23,6 +23,9 @@ st.markdown(
         width: 700px;
         height: auto;
     }
+    .left-text {
+        text-align: left;
+    }
     </style>
     """,
     unsafe_allow_html=True
