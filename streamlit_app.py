@@ -18,7 +18,7 @@ st.markdown(
         margin-left: 10px;
     }
     .title-img {
-        width: 100px;
+        width: 1600px;
         height: auto;
     }
     </style>
@@ -31,7 +31,7 @@ st.title(" ")
 col1, col2 = st.columns([1, 4])
 
 with col1:
-    st.markdown("<img src='COVER.png' class='title-img'>", unsafe_allow_html=True)
+    st.image("COVER.png", width=1600, class='title-img')
 
 with col2:
     st.markdown("<h1 class='title-text'>Rice Classification</h1>", unsafe_allow_html=True)
