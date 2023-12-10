@@ -6,6 +6,9 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.utils import load_img, img_to_array
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input as mobile
 
+st.title("Rice Classification")
+st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
+
 model = tf.keras.models.load_model('mobilenet.h5')
 
 uploaded_file = st.file_uploader("Choose a image file", type = ['png', 'jpg', 'jpeg'])
