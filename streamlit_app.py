@@ -39,7 +39,7 @@ with col2:
 
 st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
 
-st.markdown("**Predict your rice type**", unsafe_allow_html=True)
+st.markdown("**PREDICT YOUR RICE TYPE**", unsafe_allow_html=True)
 model_selection = st.radio("Select Model", ('CNN', 'MobileNet'))
 
 if model_selection == 'CNN':
