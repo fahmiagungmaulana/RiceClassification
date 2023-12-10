@@ -6,7 +6,36 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.utils import load_img, img_to_array
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input as mobile
 
-st.title("Rice Classification")
+st.markdown(
+    """
+    <style>
+    .title-container {
+        display: flex;
+        align-items: center;
+    }
+    .title-text {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .title-img {
+        width: 100px;
+        height: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.title(" ")
+
+col1, col2 = st.columns([1, 4])
+
+with col1:
+    st.image("COVER.png", width=100, class_='title-img')
+
+with col2:
+    st.markdown("<h1 class='title-text'>Rice Classification</h1>", unsafe_allow_html=True)
+
 st.write("This classifier categorizes images of rice into five different types: Arborio, Basmati, Ipsala, Jasmine, and Karacadag.")
 
 model = tf.keras.models.load_model('mobilenet.h5')
