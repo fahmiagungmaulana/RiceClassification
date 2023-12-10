@@ -26,8 +26,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title(" ")
-
 col1, col2 = st.columns([1, 4])
 
 with col1:
